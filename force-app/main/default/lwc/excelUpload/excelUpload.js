@@ -25,7 +25,7 @@ export default class ExcelUpload extends LightningElement {
     @api label;
 
     // Configuration of record fields and the corresponding Excel cell adresses
-    // up to 10 fields are supported; fields may be left blank
+    // up to 30 fields are supported; fields may be left blank
     @api field1;
     @api address1;
     @api field2;
@@ -46,6 +46,46 @@ export default class ExcelUpload extends LightningElement {
     @api address9;
     @api field10;
     @api address10;
+    @api field11;
+    @api address11;
+    @api field12;
+    @api address12;
+    @api field13;
+    @api address13;
+    @api field14;
+    @api address14;
+    @api field15;
+    @api address15;
+    @api field16;
+    @api address16;
+    @api field17;
+    @api address17;
+    @api field18;
+    @api address18;
+    @api field19;
+    @api address19;
+    @api field20;
+    @api address20;
+    @api field21;
+    @api address21;
+    @api field22;
+    @api address22;
+    @api field23;
+    @api address23;
+    @api field24;
+    @api address24;
+    @api field25;
+    @api address25;
+    @api field26;
+    @api address26;
+    @api field27;
+    @api address27;
+    @api field28;
+    @api address28;
+    @api field29;
+    @api address29;
+    @api field30;
+    @api address30;
 
     // state management to display spinners and the modal used while uploading the component
     @track ready = false;
@@ -122,7 +162,7 @@ export default class ExcelUpload extends LightningElement {
                 Id: recordId
             };
             
-            for(let i=1; i<=10; i++) {
+            for(let i=1; i<=30; i++) {
                 const field = this["field"+i];
                 let address = this["address"+i];
 
